@@ -1,0 +1,70 @@
+@import 'colors';
+@import 'mixins';
+
+.image__film {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.film__content {
+    height: 34px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 10px 0px 10px;
+}
+
+.cutsmall {
+    text-align: end;
+    margin-bottom: -5.5px;
+    margin-right: -2px;
+    object-fit: contain;
+}
+
+.film__container {
+    display: flex;
+    align-items: center;
+    gap: 1.28%;
+    flex-wrap: wrap;
+}
+
+ .film__item {
+     width: 13%;
+     background-color: rgb(0, 0, 0);
+     margin-bottom: 5px;
+ }
+
+ .film__item::after {
+    cursor: pointer;
+     background-color: red;
+    transition: top 9s ease-in-out;
+ }
+
+.film__title {
+    color: $white;
+}
+
+@include tablet {
+    
+    .film__item{
+        width: 24%;
+    }
+    .film__container{
+        gap: 1%;
+    }
+}
+
+@include mobile {
+    .cutsmall {
+        height: 24px;
+        margin-bottom: -6px;
+    }
+    .film__item{
+        width: 48%;
+    }
+    .film__container{
+        margin: 1% 1% 1% 1%;
+    }
+}

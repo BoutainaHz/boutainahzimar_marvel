@@ -1,0 +1,39 @@
+@import 'colors';
+@import 'mixins';
+
+.bg_primary {
+    background-color: $primary;
+}
+.cut{
+    text-align: end;
+    margin-bottom: -5.5px;
+    margin-right: -2px;
+    object-fit: contain;
+}
+.container{
+    padding: 0em 12em 0em 12em;
+}
+.detail_body {
+    display: flex;
+}
+.p_5{
+    padding: 5em;
+}
+@include tablet {
+    .container {
+            padding: 0px;
+        }
+    
+}
+
+@include mobile {
+    .detail_body {
+        flex-direction: column;
+    }
+    .container{
+        padding: 0px;
+    }
+    .p_5{
+        padding: 1em;
+    }
+}
