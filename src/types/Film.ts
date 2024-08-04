@@ -1,3 +1,4 @@
+// interface Film
 export default interface Film {
     id: number;
     name: string;

@@ -1,3 +1,4 @@
+// interface Comic
 export default interface Comic {
     id: number;
     title: string;

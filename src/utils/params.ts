@@ -1,4 +1,4 @@
-// utils/getIdParams.ts
+// this for reading id from url and convert it to number 
 export const getIdParams = (): number | null => {
   if (typeof window !== "undefined") {
     const params = new URLSearchParams(window.location.search);

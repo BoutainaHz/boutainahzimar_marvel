@@ -7,14 +7,23 @@ import { title } from "process";
 import React, { createContext, useState, useEffect, ReactNode } from "react";
 
 interface DataContextType {
+  // this for stock data from api characters
   films: Film[] | null;
+  // loading is a boolean to know if the data is loading
   loading: boolean;
+  //error is a string to know if there is an error
   error: string | null;
+  // addToFavorites is a function to add a film to favorites
   addToFavorites: (film: Film) => void;
+  // getFavorites is a function to get the list of favorites
   getFavorites: () => Film[] | null;
+  // search is a function to search for films
   search: (query: string) => void;
+  // findCharacter is a function to find a character by id
   findCharacter: (id: number) => Film | null;
+  // findComics is a function to find a comic by id
   findComics: (id: number) => void;
+  // comics is a list of comics
   comics: Comic[] | null;
 }
 
@@ -60,6 +69,7 @@ const DataProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
           throw new Error("Network response was not ok");
         }
         const result = await response.json();
+        // normalize the data
         const filmsData = result.data.results.map((item: any) => ({
           id: item.id,
           name: item.name,

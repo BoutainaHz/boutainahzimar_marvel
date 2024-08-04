@@ -14,25 +14,14 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Here’s a revised version of your text:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+I used SCSS, CSS, Context API, and Next.js for the project.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+For the design, I didn’t complete the carousel for comics due to time constraints.
 
-## Learn More
+I created a folder named components where various components for the application are located. Additionally, I created a folder named types with Comic and Film types.
 
-To learn more about Next.js, take a look at the following resources:
+I also created a context folder, which I used for implementing the Context API.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-"# boutainahzimar_marvel" 
-"# boutainahzimar_marvel" 
+There is also a styles folder where I used SCSS for styling.
